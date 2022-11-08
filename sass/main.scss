@@ -1,2 +1,17 @@
-@import "./variables";
-@import "./base/normalize";
+@import './utils/variables';
+@import './base/normalize';
+@import './base/base';
+@import './utils/utils';
+
+@import './components/backdrop';
+@import './components/benefits';
+@import './components/buttons';
+@import './components/cards';
+@import './components/checkbox';
+@import './components/container';
+@import './components/header';
+@import './components/hero'; 
+@import './components/job-section';
+@import './components/logo';
+@import './components/regular-customers';
+@import './components/team-section';
