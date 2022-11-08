@@ -2,6 +2,7 @@
 @import './base/normalize';
 @import './base/base';
 @import './utils/utils';
+@import './base/fonts';
 
 @import './components/backdrop';
 @import './components/benefits';
@@ -13,5 +14,7 @@
 @import './components/hero'; 
 @import './components/job-section';
 @import './components/logo';
+@import './components/nav-footer';
 @import './components/regular-customers';
+@import './components/subscription';
 @import './components/team-section';
