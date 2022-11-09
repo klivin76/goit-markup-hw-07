@@ -9,7 +9,9 @@
     align-items: center;
     gap: 30px;
 }
-
+.job-section__work-list {
+    @extend %list;
+}
 .job-section__work-title {
     margin-top: 0;
     margin-bottom: 50px;

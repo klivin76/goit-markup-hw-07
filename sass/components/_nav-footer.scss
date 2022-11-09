@@ -19,7 +19,9 @@
     margin-top: 60px;
     margin-bottom: 60px;
 }
-
+.page-footer__nav-footer {
+    @extend %list;
+}
 .page-footer__nav-footer .page-footer__items {
     color: var(--color-white);
 

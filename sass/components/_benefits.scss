@@ -9,6 +9,9 @@
     display: flex;
     gap: 30px;
 }
+.benefits__section-title {
+    @extend %list;
+}
 
 .benefits__img-benef {
     display: flex;

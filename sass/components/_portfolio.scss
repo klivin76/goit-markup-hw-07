@@ -6,7 +6,9 @@
     margin: 0;
     gap: 30px 30px;
 }
-
+.portfolio {
+    @extend %list;
+}
 .portfolio__card-link {
     display: block;
     width: 370px;

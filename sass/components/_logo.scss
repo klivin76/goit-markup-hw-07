@@ -37,7 +37,9 @@
     height: 44px;
     gap: 16px;
 }
-
+.logotype__social-team {
+    @extend %list;
+}
 .logotype__social-link {
     display: flex;
     justify-content: center;
@@ -61,7 +63,9 @@
     align-items: center;
     gap: 30px;
 }
-
+.customers-logo {
+    @extend %list;
+}
 .customers-logo__customers-link {
     display: flex;
     justify-content: center;

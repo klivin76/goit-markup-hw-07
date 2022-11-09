@@ -291,13 +291,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-}
-
 .current::after {
   display: inline-block;
   content: "";
@@ -376,6 +369,13 @@ body {
   src: local(""), url("../fonts/raleway-v28-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v28-latin-700.woff2") format("woff2"), url("../fonts/raleway-v28-latin-700.woff") format("woff"), url("../fonts/raleway-v28-latin-700.ttf") format("truetype"), url("../fonts/raleway-v28-latin-700.svg#Raleway") format("svg");
   /* Legacy iOS */
 }
+.command__team, .portfolio, .page-footer__nav-footer, .customers-logo, .logotype__social-team, .job-section__work-list, .header__nav, .header__nav-site, .joining__social-networks, .btn, .benefits__section-title {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 .backdrop {
   position: fixed;
   top: 0;

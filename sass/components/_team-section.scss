@@ -14,7 +14,9 @@
     align-items: center;
     gap: 30px;
 }
-
+.command__team {
+    @extend %list;
+}
 .command__team-title {
     display: flex;
     justify-content: center;

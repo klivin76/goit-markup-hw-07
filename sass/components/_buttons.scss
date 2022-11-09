@@ -137,7 +137,9 @@
     justify-content: center;
     gap: 8px;
 }
-
+.btn {
+    @extend %list;
+}
 .btn__buttons {
     cursor: pointer;
 

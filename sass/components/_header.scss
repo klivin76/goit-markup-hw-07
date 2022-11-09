@@ -24,6 +24,9 @@
     padding: 0;
     margin: 0 auto;
 }
+.header__nav-site {
+    @extend %list;
+}
 
 .header__nav-link:not(:last-child) {
     margin-right: 50px;
@@ -67,6 +70,9 @@
 .header__nav {
     display: flex;
     gap: 30px;
+}
+.header__nav {
+    @extend %list;
 }
 
 .header__nav-contact {

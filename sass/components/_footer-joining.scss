@@ -23,7 +23,9 @@
     align-items: center;
     gap: 10px;
 }
-
+.joining__social-networks {
+    @extend %list;
+}
 .joining__logo-social {
     display: flex;
     justify-content: center;
