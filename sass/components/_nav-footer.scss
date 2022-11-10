@@ -1,3 +1,4 @@
+// Footer.
 .footer {
     max-width: 1600px;
     height: 252px;
@@ -5,9 +6,9 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--background-color-primary);
-}
 
-.page-footer {
+
+&__page-footer {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -15,14 +16,17 @@
     padding: 0 15px;
 }
 
-.page-footer__container-address {
+&__container-address {
     margin-top: 60px;
     margin-bottom: 60px;
 }
-.page-footer__nav-footer {
-    @extend %list;
 }
-.page-footer__nav-footer .page-footer__items {
+
+// Footer-contacts.
+.nav-footer {
+    @extend %list;
+
+& &__items {
     color: var(--color-white);
 
     font-style: normal;
@@ -31,12 +35,12 @@
     text-decoration: none;
 }
 
-.page-footer__nav-footer .page-footer__items:hover,
-.page-footer__nav-footer .page-footer__items:focus {
+& &__items:hover,
+& &__items:focus {
     color: var(--accent-color);
 }
 
-.page-footer__nav-footer .page-footer__items-contact {
+& &__items-contact {
     color: var(--color-text-contact);
 
     font-style: normal;
@@ -45,7 +49,8 @@
     text-decoration: none;
 }
 
-.page-footer__nav-footer .page-footer__items-contact:hover,
-.page-footer__nav-footer .page-footer__items-contact:focus {
+& &__items-contact:hover,
+& &__items-contact:focus {
     color: var(--accent-color);
+}
 }

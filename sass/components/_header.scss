@@ -1,4 +1,5 @@
-.header {
+// Header.
+.page-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,9 +7,8 @@
 
     margin: 0 auto;
     border: 1px solid var(--border-color-header);
-}
 
-.header__container-header {
+&__container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,26 +17,27 @@
     height: 80px;
     padding: 0 15px;
 }
+}
 
-
-.header__nav-site {
+// Меню Header.
+.nav-site {
     display: flex;
     padding: 0;
     margin: 0 auto;
-}
-.header__nav-site {
+
+& {
     @extend %list;
 }
 
-.header__nav-link:not(:last-child) {
+&__nav-link:not(:last-child) {
     margin-right: 50px;
 }
 
-.header__nav-link:last-child {
+&__nav-link:last-child {
     margin-right: auto;
 }
 
-.header__nav-link .header__link {
+&__nav-link &__link {
     position: relative;
     display: block;
     padding: 32px 0;
@@ -50,48 +51,50 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__nav-link .header__link:hover,
-.header__nav-link .header__link:focus {
+&__nav-link &__link:hover,
+&__nav-link &__link:focus {
     color: var(--accent-color);
 }
 
-.header__nav-link .header__link.current {
+&__nav-link &__link.current {
     color: var(--accent-color);
 }
+}
 
-.header__container-contact {
+// Container Header-contacts.
+.container-contact {
     max-width: 1200px;
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0 auto 0 318px;
     text-align: center;
-}
 
-.header__nav {
+&__nav {
     display: flex;
     gap: 30px;
 }
-.header__nav {
+&__nav {
     @extend %list;
 }
+}
 
-.header__nav-contact {
+// Header contacts.
+.nav-contact {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.header__icon-header {
+&__icon-header {
     margin-right: 10px;
 
     fill: currentColor;
 }
 
-.header__icon-header:hover {
+&__icon-header:hover {
     color: var(--accent-color);
 }
 
-.header__nav .header__item-header {
+.container-contact__nav &__item-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +109,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__nav .header__item-header:hover,
-.header__nav .header__item-header:focus {
+.container-contact__nav &__item-header:hover,
+.container-contact__nav &__item-header:focus {
     color: var(--accent-color);
+}
 }

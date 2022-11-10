@@ -1,18 +1,10 @@
+// Section-job.
 .job-section {
     padding: 94px 0;
     text-align: center;
-}
 
-.job-section__work-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.job-section__work-list {
-    @extend %list;
-}
-.job-section__work-title {
+
+&__work-title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -21,11 +13,25 @@
     font-size: 36px;
     line-height: 1.17;
 }
+}
 
-.job-section__photo-work:last-child {
+// Список робот.
+.work-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+& {
+    @extend %list;
+}
+
+
+&__photo-work:last-child {
     margin-right: 215px;
 }
 
-.job-section__photo-work:first-child {
+&__photo-work:first-child {
     margin-left: 215px;
+}
 }

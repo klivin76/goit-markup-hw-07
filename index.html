@@ -13,36 +13,37 @@
   <body>
     <!-- Шапка сайта -->
 
-    <header class="header">
-      <div class="header__container-header">
+    <header class="page-header">
+      <div class="page-header__container-header">
         <a class="logo" href="./index.html"
           ><span class="logo__logotype-web">Web</span><span class="logo__logotype-studio">Studio</span></a
         >
 
         <nav>
-          <ul class="header__nav-site list">
-            <li class="header__nav-link">
-              <a href="./index.html" class="header__link current">Студія</a>
+          <ul class="nav-site list">
+            <li class="nav-site__nav-link">
+              <a href="./index.html" class="nav-site__link current">Студія</a>
             </li>
-            <li class="header__nav-link">
-              <a href="./portfolio.html" class="header__link">Портфоліо</a>
+            <li class="nav-site__nav-link">
+              <a href="./portfolio.html" class="nav-site__link">Портфоліо</a>
             </li>
-            <li class="header__nav-link"><a href="#" class="header__link">Контакти</a></li>
+            <li class="nav-site__nav-link"><a href="#" class="nav-site__link">Контакти</a></li>
           </ul>
         </nav>
-        <div class="header__container-contact">
-          <ul class="header__nav list">
-            <li class="header__nav-contact">
-              <a href="mailto:info@devstudio.com" class="header__item-header">
-                <svg class="header__icon-header" width="16" height="12">
+
+        <div class="container-contact">
+          <ul class="container-contact__nav list">
+            <li class="nav-contact">
+              <a href="mailto:info@devstudio.com" class="nav-contact__item-header">
+                <svg class="nav-contact__icon-header" width="16" height="12">
                   <use href="./images/sprite.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="header__nav-contact">
-              <a href="tel:+380961111111" class="header__item-header">
-                <svg class="header__icon-header" width="10" height="16">
+            <li class="nav-contact">
+              <a href="tel:+380961111111" class="nav-contact__item-header">
+                <svg class="nav-contact__icon-header" width="10" height="16">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -124,8 +125,8 @@
       <section class="job-section">
         <div class="container">
           <h2 class="job-section__work-title">Чим ми займаємося</h2>
-          <ul class="job-section__work-list list">
-            <li class="job-section__photo-work">
+          <ul class="work-list list">
+            <li class="work-list__photo-work">
               <div class="work-card">
                 <img
                   src="./images/pict1.jpg"
@@ -137,7 +138,7 @@
                 </div>
               </div>
             </li>
-            <li class="job-section__photo-work">
+            <li class="work-list__photo-work">
               <div class="work-card">
                 <img
                   src="./images/pict2.jpg"
@@ -149,7 +150,7 @@
                 </div>
               </div>
             </li>
-            <li class="job-section__photo-work">
+            <li class="work-list__photo-work">
               <div class="work-card">
                 <img
                   src="./images/pict3.jpg"
@@ -170,10 +171,10 @@
         <div class="container">
           <h2 class="command__team-title">Наша команда</h2>
           <ul class="command__team list">
-            <li class="command__team-foto">
+            <li class="team-foto">
               <img src="./images/photo1.jpg" alt="Ігор" width="270" />
-              <h3 class="command__title">Ігор Дем'яненко</h3>
-              <p class="command__subtitle">Product Designer</p>
+              <h3 class="team-foto__title">Ігор Дем'яненко</h3>
+              <p class="team-foto__subtitle">Product Designer</p>
               <div class="logotype">
                 <ul class="logotype__social-team list">
                   <li>
@@ -207,10 +208,10 @@
                 </ul>
               </div>
             </li>
-            <li class="command__team-foto">
+            <li class="team-foto">
               <img src="./images/photo2.jpg" alt="Ольга" width="270" />
-              <h3 class="command__title">Ольга Рєпіна</h3>
-              <p class="command__subtitle">Frontend Developer</p>
+              <h3 class="team-foto__title">Ольга Рєпіна</h3>
+              <p class="team-foto__subtitle">Frontend Developer</p>
               <div class="logotype">
                 <ul class="logotype__social-team list">
                   <li>
@@ -244,10 +245,10 @@
                 </ul>
               </div>
             </li>
-            <li class="command__team-foto">
+            <li class="team-foto">
               <img src="./images/photo3.jpg" alt="Микола" width="270" />
-              <h3 class="command__title">Микола Тарасов</h3>
-              <p class="command__subtitle">Marketing</p>
+              <h3 class="team-foto__title">Микола Тарасов</h3>
+              <p class="team-foto__subtitle">Marketing</p>
               <div class="logotype">
                 <ul class="logotype__social-team list">
                   <li>
@@ -281,10 +282,10 @@
                 </ul>
               </div>
             </li>
-            <li class="command__team-foto">
+            <li class="team-foto">
               <img src="./images/photo4.jpg" alt="Михайло" width="270" />
-              <h3 class="command__title">Михайло Єрмаков</h3>
-              <p class="command__subtitle">UI Designer</p>
+              <h3 class="team-foto__title">Михайло Єрмаков</h3>
+              <p class="team-foto__subtitle">UI Designer</p>
               <div class="logotype">
                 <ul class="logotype__social-team list">
                   <li>
@@ -377,16 +378,16 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <div class="page-footer">
-        <div class="page-footer__container-address">
+      <div class="footer__page-footer">
+        <div class="footer__container-address">
           <a class="logo" href="./index.html"><span class="logo__logotype-web">Web</span><span
               class="logo__logotype-studio logo__logotype-studio--inverse">Studio</span></a>
 
           <address>
-            <ul class="page-footer__nav-footer list">
+            <ul class="nav-footer list">
               <li>
                 <a
-                  class="page-footer__items"
+                  class="nav-footer__items"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -395,12 +396,12 @@
                 >
               </li>
               <li>
-                <a class="page-footer__items-contact" href="mailto:info@devstudio.com"
+                <a class="nav-footer__items-contact" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="page-footer__items-contact" href="tel:+380961111111"
+                <a class="nav-footer__items-contact" href="tel:+380961111111"
                   >+38 096 111-11-11</a
                 >
               </li>
@@ -412,31 +413,31 @@
 
         <div class="joining">
           <h3 class="joining__title-footer">Приєднуйтесь</h3>
-          <div class="joining__logo-social">
-            <ul class="joining__social-networks list">
+          <div class="icon-social">
+            <ul class="icon-social__social-networks list">
               <li>
-                <a class="joining__link-social" href="#">
+                <a class="icon-social__link-social" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="joining__link-social" href="#">
+                <a class="icon-social__link-social" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="joining__link-social" href="#">
+                <a class="icon-social__link-social" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="joining__link-social" href="#">
+                <a class="icon-social__link-social" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
@@ -450,10 +451,10 @@
 
         <div class="subscription">
           <h3 class="subscription__title-subscribe">Підпишіться на розсилку</h3>
-          <form class="subscription__form-subscribe">
+          <form class="form-subscribe">
             <label for="subscribe-mail">
               <input
-                class="subscription__input-subscribe"
+                class="form-subscribe__input-subscribe"
                 type="email"
                 name="subscribe-mail"
                 placeholder="E-mail"

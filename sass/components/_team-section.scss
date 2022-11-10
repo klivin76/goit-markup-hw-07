@@ -1,3 +1,4 @@
+// Section Team.
 .command {
     display: flex;
     justify-content: center;
@@ -6,18 +7,8 @@
     margin: 0 auto;
     text-align: center;
     background-color: var(--background-color-sekondary);
-}
 
-.command__team {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.command__team {
-    @extend %list;
-}
-.command__team-title {
+&__team-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,16 +21,28 @@
     line-height: 1.17;
 }
 
-.command__team-foto {
+&__team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+&__team {
+    @extend %list;
+}
+}
+
+//Photo employee.
+.team-foto {
     display: block;
 
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
 
-.command__title {
+
+&__title {
     margin-top: 30px;
     margin-bottom: 0;
     color: var(--primary-text-color);
@@ -49,7 +52,7 @@
     line-height: 1.19;
 }
 
-.command__subtitle {
+&__subtitle {
     margin-top: 10pt;
     margin-bottom: 16px;
     color: var(--text-color);
@@ -57,4 +60,4 @@
     font-size: 16px;
     line-height: 1.19;
 }
-
+}

@@ -9,9 +9,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
 
-.hero__hero-list {
+
+&__hero-list {
     display: block;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
     padding-bottom: 200px;
 }
 
-.hero__hero-title {
+&__hero-title {
     max-width: 696px;
     margin: 0 auto;
 
@@ -30,4 +30,5 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
 }
