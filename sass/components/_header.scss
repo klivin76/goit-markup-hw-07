@@ -8,7 +8,7 @@
     margin: 0 auto;
     border: 1px solid var(--border-color-header);
 
-&__container-header {
+&__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
 }
 
 // Меню Header.
-.nav-site {
+.burger {
     display: flex;
     padding: 0;
     margin: 0 auto;
@@ -79,7 +79,7 @@
 }
 
 // Header contacts.
-.nav-contact {
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
