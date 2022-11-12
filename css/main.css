@@ -356,7 +356,7 @@ body {
   src: local(""), url("../fonts/raleway-v28-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v28-latin-700.woff2") format("woff2"), url("../fonts/raleway-v28-latin-700.woff") format("woff"), url("../fonts/raleway-v28-latin-700.ttf") format("truetype"), url("../fonts/raleway-v28-latin-700.svg#Raleway") format("svg");
   /* Legacy iOS */
 }
-.command__team, .portfolio, .nav-footer, .customers-logo, .logotype__social-team, .work-list, .container-contact__nav, .burger, .icon-social__social-networks, .btn, .section-benefits__index {
+.command__team, .portfolio, .communications, .brand, .logotype__social-team, .work-list, .container-contact__nav, .burger, .badge__social-networks, .btn, .section-benefits__index {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -424,10 +424,10 @@ body {
   color: var(--primary-text-color);
 }
 
-.contact-form {
+.form {
   width: 448px;
 }
-.contact-form__form-label {
+.form__form-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -435,7 +435,7 @@ body {
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
-.contact-form__form-coment {
+.form__form-coment {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -454,30 +454,30 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.contact-form__form-coment:focus {
+.form__form-coment:focus {
   border-color: var(--accent-color);
 }
-.contact-form__form-coment::-webkit-input-placeholder {
+.form__form-coment::-webkit-input-placeholder {
   color: var(--color-text-coment);
 }
-.contact-form__form-coment::-moz-placeholder {
+.form__form-coment::-moz-placeholder {
   color: var(--color-text-coment);
 }
-.contact-form__form-coment:-ms-input-placeholder {
+.form__form-coment:-ms-input-placeholder {
   color: var(--color-text-coment);
 }
-.contact-form__form-coment::-ms-input-placeholder {
+.form__form-coment::-ms-input-placeholder {
   color: var(--color-text-coment);
 }
-.contact-form__form-coment::placeholder {
+.form__form-coment::placeholder {
   color: var(--color-text-coment);
 }
 
-.form-field {
+.field {
   position: relative;
   margin-bottom: 10px;
 }
-.form-field__form-input {
+.field__form-input {
   width: 100%;
   height: 40px;
   padding: 12px 12px 12px 42px;
@@ -488,10 +488,10 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.form-field__form-input:focus {
+.field__form-input:focus {
   border-color: var(--accent-color);
 }
-.form-field__modal-icon {
+.field__modal-icon {
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -500,7 +500,7 @@ body {
           transform: translateY(-50%);
   fill: currentColor;
 }
-.form-field__form-input:focus + .form-field__modal-icon {
+.field__form-input:focus + .field__modal-icon {
   fill: var(--accent-color);
 }
 
@@ -516,7 +516,7 @@ body {
   display: flex;
   gap: 30px;
 }
-.section-benefits .benefits {
+.benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,16 +533,18 @@ body {
   background-color: var(--background-color-sekondary);
   border-radius: 4px;
 }
-.section-benefits__title {
+.benefits__subtext {
   margin-bottom: 10px;
   margin-top: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-.section-benefits__subtitle {
+.benefits__implication {
   margin-top: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
@@ -707,14 +709,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.work-card__work-applications {
+.work-card__applications {
   position: absolute;
   width: 100%;
   height: 70px;
   bottom: 0;
   background-color: var(--background-color-applications);
 }
-.work-card__applications-text {
+.work-card__content {
   padding-top: 27px;
   padding-bottom: 27px;
   margin: 0;
@@ -803,13 +805,13 @@ body {
   color: var(--accent-color);
 }
 
-.input-check {
+.check {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   position: absolute;
 }
-.input-check__icon-check {
+.check__icon-check {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -825,13 +827,13 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.input-check__text-check {
+.check__text-check {
   padding-left: 7px;
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-color);
 }
-.input-check:checked + .input-check__icon-check {
+.check:checked + .check__icon-check {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   background-image: url("../images/icon-check.svg");
@@ -862,7 +864,7 @@ body {
   color: var(--color-white);
 }
 
-.icon-social {
+.badge {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,7 +876,7 @@ body {
           align-items: center;
   gap: 10px;
 }
-.icon-social__social-networks {
+.badge__social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,7 +888,7 @@ body {
           align-items: center;
   gap: 10px;
 }
-.icon-social__link-social {
+.badge__link-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,7 +904,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.icon-social__link-social:hover {
+.badge__link-social:hover {
   fill: var(--color-white);
   background-color: var(--accent-color);
 }
@@ -1061,10 +1063,9 @@ body {
   padding: 94px 0;
   text-align: center;
 }
-.job-section__work-title {
+.job-section__heading {
   margin-top: 0;
   margin-bottom: 50px;
-  color: var(--primary-text-color);
   font-size: 36px;
   line-height: 1.17;
 }
@@ -1081,10 +1082,10 @@ body {
           align-items: center;
   gap: 30px;
 }
-.work-list__photo-work:last-child {
+.work-list__photo:last-child {
   margin-right: 215px;
 }
-.work-list__photo-work:first-child {
+.work-list__photo:first-child {
   margin-left: 215px;
 }
 
@@ -1158,7 +1159,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.customers-logo {
+.brand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1170,7 +1171,7 @@ body {
           align-items: center;
   gap: 30px;
 }
-.customers-logo__customers-link {
+.brand__customers-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1189,7 +1190,7 @@ body {
   -webkit-transition: background-color-social 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color-social 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-logo__customers-link:hover {
+.brand__customers-link:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -1211,29 +1212,29 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-.footer__container-address {
+.footer__address {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-.nav-footer .nav-footer__items {
+.communications .communications__items {
   color: var(--color-white);
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
 }
-.nav-footer .nav-footer__items:hover, .nav-footer .nav-footer__items:focus {
+.communications .communications__items:hover, .communications .communications__items:focus {
   color: var(--accent-color);
 }
-.nav-footer .nav-footer__items-contact {
+.communications .communications__items-contact {
   color: var(--color-text-contact);
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
 }
-.nav-footer .nav-footer__items-contact:hover, .nav-footer .nav-footer__items-contact:focus {
+.communications .communications__items-contact:hover, .communications .communications__items-contact:focus {
   color: var(--accent-color);
 }
 
@@ -1284,7 +1285,7 @@ body {
   padding: 94px 0;
   text-align: center;
 }
-.regular-customers__title-customers {
+.regular-customers__heading {
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
@@ -1292,33 +1293,14 @@ body {
 }
 
 .command {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 94px 0;
   margin: 0 auto;
   text-align: center;
   background-color: var(--background-color-sekondary);
 }
-.command__team-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.command__heading {
   margin-top: 0;
   margin-bottom: 50px;
-  color: var(--primary-text-color);
   font-size: 36px;
   line-height: 1.17;
 }
@@ -1370,7 +1352,7 @@ body {
   color: var(--color-white);
 }
 
-.form-subscribe {
+.subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1381,7 +1363,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.form-subscribe__input-subscribe {
+.subscribe__input-subscribe {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -1397,31 +1379,31 @@ body {
   border-radius: 4px;
   outline: none;
 }
-.form-subscribe__input-subscribe::-webkit-input-placeholder {
+.subscribe__input-subscribe::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 25;
   color: var(--color-text-contact);
 }
-.form-subscribe__input-subscribe::-moz-placeholder {
+.subscribe__input-subscribe::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 25;
   color: var(--color-text-contact);
 }
-.form-subscribe__input-subscribe:-ms-input-placeholder {
+.subscribe__input-subscribe:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 25;
   color: var(--color-text-contact);
 }
-.form-subscribe__input-subscribe::-ms-input-placeholder {
+.subscribe__input-subscribe::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 25;
   color: var(--color-text-contact);
 }
-.form-subscribe__input-subscribe::placeholder {
+.subscribe__input-subscribe::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 25;

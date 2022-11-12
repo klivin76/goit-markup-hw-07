@@ -5,7 +5,7 @@
     justify-content: center;
 
 
-&__work-applications {
+&__applications {
     position: absolute;
 
     width: 100%;
@@ -14,7 +14,7 @@
     background-color: var(--background-color-applications);
 }
 
-&__applications-text {
+&__content {
     padding-top: 27px;
     padding-bottom: 27px;
     margin: 0;

@@ -16,14 +16,14 @@
     padding: 0 15px;
 }
 
-&__container-address {
+&__address {
     margin-top: 60px;
     margin-bottom: 60px;
 }
 }
 
 // Footer-contacts.
-.nav-footer {
+.communications {
     @extend %list;
 
 & &__items {
